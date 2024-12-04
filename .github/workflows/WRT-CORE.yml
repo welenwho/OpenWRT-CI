@@ -66,6 +66,7 @@ jobs:
       - name: Free Disk Space
         uses: endersonmenezes/free-disk-space@main
         with:
+          testing: false
           remove_android: true
           remove_dotnet: true
           remove_haskell: true
@@ -80,7 +81,6 @@ jobs:
             /usr/local/share/vcpkg/ports/llvm* /usr/local/share/vcpkg/ports/mysql* /usr/local/share/vcpkg/ports/snap* \
             /usr/share/azure* /usr/share/dotnet* /usr/share/glade* /usr/share/miniconda* /usr/share/php* /usr/share/swift \
             /var/lib/mysql* /var/log/azure*"
-          testing: false
 
       - name: Initialization Environment
         env:
